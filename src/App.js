@@ -28,12 +28,18 @@ export default function App() {
                 <div className="px-2 pb-7">
                     <img
                         className="pattern-divider md:hidden"
-                        src="../images/pattern-divider-mobile.svg"
+                        src={
+                            process.env.PUBLIC_URL +
+                            '../images/pattern-divider-mobile.svg'
+                        }
                         alt="two white lines"
                     />
                     <img
                         className="pattern-divider hidden md:block"
-                        src="../images/pattern-divider-desktop.svg"
+                        src={
+                            process.env.PUBLIC_URL +
+                            '../images/pattern-divider-desktop.svg'
+                        }
                         alt="two white lines"
                     />
                 </div>
@@ -43,7 +49,7 @@ export default function App() {
                 >
                     <img
                         className="h-[24px] w-[50%]"
-                        src="../images/icon-dice.svg"
+                        src={process.env.PUBLIC_URL + '../images/icon-dice.svg'}
                         alt="dice of number 5"
                     />
                 </div>
