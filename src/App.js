@@ -1,5 +1,8 @@
 import { useEffect, useState } from 'react'
 import MainContent from './MainContent'
+import mobilePatternDivider from '../images/pattern-divider-mobile.svg'
+import desktopPatternDivider from '../images/pattern-divider-desktop.svg'
+import diceIcon from '../images/icon-dice.svg'
 
 export default function App() {
     const [quote, setQuote] = useState(
@@ -28,18 +31,12 @@ export default function App() {
                 <div className="px-2 pb-7">
                     <img
                         className="pattern-divider md:hidden"
-                        src={
-                            process.env.PUBLIC_URL +
-                            '../images/pattern-divider-mobile.svg'
-                        }
+                        src={mobilePatternDivider}
                         alt="two white lines"
                     />
                     <img
                         className="pattern-divider hidden md:block"
-                        src={
-                            process.env.PUBLIC_URL +
-                            '../images/pattern-divider-desktop.svg'
-                        }
+                        src={desktopPatternDivider}
                         alt="two white lines"
                     />
                 </div>
@@ -49,7 +46,7 @@ export default function App() {
                 >
                     <img
                         className="h-[24px] w-[50%]"
-                        src={process.env.PUBLIC_URL + '../images/icon-dice.svg'}
+                        src={diceIcon}
                         alt="dice of number 5"
                     />
                 </div>
