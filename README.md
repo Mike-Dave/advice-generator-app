@@ -25,8 +25,8 @@ Users should be able to:
 
 ### Screenshot
 
-| ![Advice Generator App](public/images/desktop-screenshot.png) | ![Advice Generator App](public/images/mobile-screenshot.png) |
-| ------------------------------------------------------------- | ------------------------------------------------------------ |
+| ![Advice Generator App](src/images/desktop-screenshot.png) | ![Advice Generator App](src/images/mobile-screenshot.png) |
+| ---------------------------------------------------------- | --------------------------------------------------------- |
 
 ### Links
 

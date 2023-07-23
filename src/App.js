@@ -5,16 +5,13 @@ import desktopPatternDivider from './images/pattern-divider-desktop.svg'
 import diceIcon from './images/icon-dice.svg'
 
 export default function App() {
-    const [quote, setQuote] = useState(
-        "''It is easy to sit up and take notice, what's difficult is getting up and taking action.''"
-    )
+    const [quote, setQuote] = useState('')
     const [quoteID, setQuoteID] = useState('')
     async function clickToGetAdvice() {
         try {
             const res = await fetch('https://api.adviceslip.com/advice')
             if (!res.ok) throw new Error('Problem getting advice data')
             const data = await res.json()
-
             setQuote(data.slip.advice)
             setQuoteID(data.slip.id)
         } catch (err) {
