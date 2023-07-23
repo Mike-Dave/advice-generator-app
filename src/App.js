@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react'
 import MainContent from './MainContent'
-import mobilePatternDivider from '../images/pattern-divider-mobile.svg'
-import desktopPatternDivider from '../images/pattern-divider-desktop.svg'
-import diceIcon from '../images/icon-dice.svg'
+import mobilePatternDivider from './images/pattern-divider-mobile.svg'
+import desktopPatternDivider from './images/pattern-divider-desktop.svg'
+import diceIcon from './images/icon-dice.svg'
 
 export default function App() {
     const [quote, setQuote] = useState(
@@ -45,7 +45,7 @@ export default function App() {
                     onClick={clickToGetAdvice}
                 >
                     <img
-                        className="h-[24px] w-[50%]"
+                        className="w-[40%]"
                         src={diceIcon}
                         alt="dice of number 5"
                     />
