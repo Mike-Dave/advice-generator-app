@@ -22,8 +22,8 @@ export default function App() {
         clickToGetAdvice()
     }, [])
     return (
-        <main className=" flex min-h-screen items-center justify-center bg-darkGrayishBlue">
-            <section className=" container relative mx-auto w-11/12 rounded-lg bg-grayishBlue  p-5 pb-10 text-center md:max-w-md">
+        <main className=" flex min-h-screen items-center justify-center bg-[#1f2632]">
+            <section className=" container relative mx-auto w-11/12 rounded-lg bg-[#323a49]  p-5 pb-10 text-center md:max-w-md">
                 <MainContent quote={quote} quoteID={quoteID} />
                 <div className="px-2 pb-7">
                     <img
